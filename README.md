@@ -4,7 +4,7 @@ This repository contains simple documentation for configuring git-crypt in gpg m
 - [Managing a repository with git-crypt in GPG mode](#gpg-key-generation)
 
 # GPG Key Generation
-To generate the necessary public/private RSA keypair you will need to have instaled [Gnu Privacy Guard (GnuPG)](https://www.gnupg.org/). For Mac users this can be installed via `brew install gnupg`.
+To generate the necessary public/private RSA keypair you will need to have installed [Gnu Privacy Guard (GnuPG)](https://www.gnupg.org/). For Mac users this can be installed via `brew install gnupg`.
 
 Once installed, a new RSA key can be configured using a single command:
 ```
@@ -56,9 +56,9 @@ git-crypt add-gpg-user USER_ID
 ```
 Where `USER_ID` is the email address / username that you specified when you generated your RSA key using GPG. 
 ## git-crypt GPG: Adding new users
-To add a new user, the user in question *must* first have sent you their keyfile. This will be of the format `keyfile.asc`. Once this file has been downloaded to your local machine, you can proceed.
+To start, the user in question *must* first have sent you their keyfile. This will be of the format `keyfile.asc` as described in the [key generation section](#gpg-key-generation). Once this file has been downloaded to your local machine, you can proceed.
 
-Firstly, import the key from the downloaded keyfile:
+First, import the key from the downloaded keyfile:
 ```
 gpg --import ~/path/to/the/keyfile.asc
 ```
