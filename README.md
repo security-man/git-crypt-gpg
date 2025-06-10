@@ -1,7 +1,7 @@
 # git-crypt-gpg
 This repository contains simple documentation for configuring git-crypt in gpg mode. The documentation is divided into two sections:
 - [Generating a GPG keypair](#gpg-key-generation)
-- [Managing a repository with git-crypt in GPG mode](#gpg-key-generation)
+- [Managing a repository with git-crypt in GPG mode](#git-crypt-gpg-configuration)
 
 # GPG Key Generation
 To generate the necessary public/private RSA keypair you will need to have installed [Gnu Privacy Guard (GnuPG)](https://www.gnupg.org/). For Mac users this can be installed via `brew install gnupg`.
