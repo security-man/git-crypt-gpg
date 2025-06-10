@@ -71,6 +71,7 @@ The above command will give you many options for editing the key. You should ent
 - 5
 - y
 - quit
+```
 Next, you can add the newly-trusted key as a user via git-crypt: 
 ```
 git-crypt add-gpg-user USER_ID
